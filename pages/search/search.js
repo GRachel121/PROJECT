@@ -1,5 +1,4 @@
 var app = getApp();
-var searchValue = ''
 
 Page({
   data: {
@@ -112,6 +111,9 @@ Page({
 
   onLoad: function (options) {
     this.openLocationsercher();
+    this.setData({
+      searchValue: options.searchValue,
+    })
   },
 
 })
