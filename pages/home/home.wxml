@@ -18,7 +18,7 @@
   <view>
     <view class="weui-grids">
       <view class="weui-grid" wx:for="{{routers}}" wx:key="text">
-        <navigator url="{{'../detail/detail+?text='+item.text+'&code='+item.code}}">
+        <navigator url="../search/search?searchValue={{item.text}}">
           <view class='weui-grid__bg'>
             <view class="weui-grid__icon">
               <image src=" {{item.icon}}" mode="scaleToFill" />
